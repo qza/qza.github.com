@@ -21,16 +21,12 @@
 				<nav class="nav-global">
 					<ul>
 						<li class="logo"><a href="/">{{ site.title }}</a></li>
-						<li class="archive"><a href="/archive.html">archive</a></li>
-						<li class="page"><a href="/pages.html">pages</a></li>
-						<li class="category"><a href="/categories.html">categories</a></li>
-						<li class="tag"><a href="/tags.html">tags</a></li>
-						<ul>
-  	  						{% assign tags_list = site.tags %}  
-  	  						{% include JB/tags_list %}
-  						</ul>
 					</ul>
 				</nav>
+				<ul class="tag_box inline">
+					{% assign tags_list = site.tags %}  
+					{% include JB/tags_list %}
+				</ul>
 			</div><!-- unit-inner -->
 		</div><!-- unit-head -->
 	</header>
@@ -59,6 +55,12 @@
 					Theme: <a href="http://layouts-the.me">the_minimum</a> based on <a href="http://jekyllbootstrap.com/">Jekyll-bootstrap</a>.<br>
 					Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>.
 				</p>
+				<ul>
+					<li class="archive"><a href="/archive.html">archive</a></li>
+					<li class="page"><a href="/pages.html">pages</a></li>
+					<li class="category"><a href="/categories.html">categories</a></li>
+					<li class="tag"><a href="/tags.html">tags</a></li>
+				</ul>
 			</div><!-- unit-foot-inner -->
 		</div><!-- unit-foot -->
 	</footer>

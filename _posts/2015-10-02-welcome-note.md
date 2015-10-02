@@ -16,9 +16,7 @@ this, compare previous and new blog entries and see how is progress reflected wi
 behind, when someone asks.
 
 Categories should cover many topics, including personal and technical stuff with plenty of info, tutorials, open topics for 
-discussions and many more.
-
-Hope you will enjoy in talk with me.
+discussion and many more.
 
 Officially started.
-Qza, 2015-06-05
+Zoran

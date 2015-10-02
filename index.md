@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Introduction
+title: All posts
 tagline: Welcome note
 ---
 {% include JB/setup %}

@@ -23,8 +23,12 @@
 				<nav class="nav-global">
 					<ul>
 						<li class="logo"><a href="/">{{ site.title }}</a></li>
-						<li ><a href="/">{{ site.tagline }}</a></li>
+						{{ site.tagline }}
 					</ul>
+					<ul class="blank-list">
+				  	  {% assign categories_list = site.categories %}  
+				  	  {% include JB/categories_list %}
+				  	</ul>
 					<ul>
 						<li class="archive"><a href="/archive.html">archive</a></li>
 					</ul>

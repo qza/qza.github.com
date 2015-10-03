@@ -657,7 +657,7 @@ pre {
   margin-top: 0;
 }
 .unit-article a:link {
-  border-bottom: 1px dashed #c26164;
+  /*border-bottom: 1px dashed #c26164;*/
 }
 .unit-article a:visited {
   border-bottom: 1px dashed #ad4346;
@@ -966,9 +966,7 @@ pre {
     height: 26px;
   }
   .the-header .unit-head .nav-global li a:hover {
-  	
-    background-color: #C26164;
-    color: #474747;
+    color: #C26164;
   }
   .the-header .unit-head .nav-global li:nth-child(2) {
     border-width: 0 1px;

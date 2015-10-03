@@ -2,8 +2,8 @@
 layout: post
 title: "Welcome note"
 description: ""
-category: global 
-tags: [software development]
+category: [notes] 
+tags: [software, development]
 ---
 {% include JB/setup %}
 

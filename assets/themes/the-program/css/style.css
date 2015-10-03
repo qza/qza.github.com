@@ -69,15 +69,6 @@ textarea {
   text-shadow: none;
 }
 
-.licence {
-	font-size: 60%;
-}
-
-.blank-list {
-	list-style-type: none;
- 	list-style-position: outside;
- 	list-style-image: none;
-}
 /*
 Links from [HTML5 Boilerplate](http://j.mp/rP0wmY)
 
@@ -1491,4 +1482,15 @@ hr {
 .right {
   *display: inline;
   float: right;
+}
+
+
+.licence {
+	font-size: 60%;
+}
+
+.blank-list {
+	list-style-type: none;
+ 	list-style-position: outside;
+ 	list-style-image: none;
 }

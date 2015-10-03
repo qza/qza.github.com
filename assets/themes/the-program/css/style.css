@@ -908,7 +908,6 @@ pre {
   display: block;
   font-size: 30px;
   line-height: 52px;
-  padding-bottom: 8px;
 }
 .body .unit-body {
   border-top: 1px solid rgba(255, 255, 255, 0.6);
@@ -1056,7 +1055,6 @@ pre {
     display: block;
     font-size: 30px;
     line-height: 52px;
-    margin-bottom: 26px;
     padding-left: 5px;
     position: relative;
     top: auto;

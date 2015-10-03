@@ -908,7 +908,7 @@ pre {
   display: block;
   font-size: 30px;
   line-height: 52px;
-  padding-bottom: 26px;
+  padding-bottom: 8px;
 }
 .body .unit-body {
   border-top: 1px solid rgba(255, 255, 255, 0.6);

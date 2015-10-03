@@ -9,7 +9,7 @@ highlighter: pygments
 # so be sure to set them if your theme uses them.
 #
 title : Developer stream
-tagline: On the way
+tagline: About software, development, design, business, experiences and much more  
 author :
   name : Zoran Kokovic
   email : kokovic.zoran@gmail.com	

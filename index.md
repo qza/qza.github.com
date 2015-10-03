@@ -8,10 +8,14 @@ tagline: Welcome note
 <ul class="blank-list">
 	{% for post in site.posts %}
 		<li>
-	   		<a href="{{ post.url }}">
-	   			<time>{{ post.date | date: "%-d %B %Y" }}</time>
-	   			{{ post.title }}
-	    	</a>
+			<span>
+		   		<a href="{{ post.url }}">
+		   			{{ post.title }}
+		    	</a>
+		    	<span class="badge">
+		    		<time>{{ post.date | date: "%-d %B %Y" }}</time>
+		    	</span>
+	    	</span>
 	    </li>
 	{% endfor %}
 </ul>

@@ -1,11 +1,11 @@
 ---
 layout: page
-title: All posts
+title: Index
 tagline: Welcome note
 ---
 {% include JB/setup %}
 
-<ul>
+<ul class="blank-list">
   {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>

@@ -10,6 +10,7 @@
 	<meta name="author" content="{{ site.author.name }}">
 	<link href='{{ ASSET_PATH }}/css/style.css' rel="stylesheet" media="all">
 	<link href='{{ ASSET_PATH }}/css/tags.css' rel="stylesheet" media="all">
+	<link href='{{ ASSET_PATH }}/css/flatsocial.css' rel="stylesheet" media="all">
 	<link href="http://feeds.feedburner.com/{{ site.author.feedbaname }}" rel="alternate" title="{{ page.title }}" type="application/atom+xml">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
 </head>
@@ -42,12 +43,16 @@
 			<div class="unit-inner unit-foot-inner">
 				<div class="misc vcard">
 					<h4>about</h4>
-					<ul>
-						<li class="contact"><address><span class="author fn n">{{ site.author.name }}</span> - <span class="fn email">{{ site.author.email }}</span></address></li>
-						<li class="github"><a href="http://github.com/{{ site.author.github }}/" rel="me">github.com/{{ site.author.github }}</a></li>
-						<li class="twitter"><a href="http://twitter.com/{{ site.author.twitter }}/" rel="me">twitter.com/{{ site.author.twitter }}</a></li>
-						<li class="rss"><a href="http://feeds.feedburner.com/{{ site.author.feedname }}">RSS</a></li>
-					</ul>
+					<!-- social__item linkedin -->
+    				<div class="social__item">
+            			<a target="_blank" href="https://www.linkedin.com/in/zkoko" class="social__icon--linkedin"><i class="icon--linkedin"></i></a>
+    				</div>
+    				<div class="social__item">
+				       	<a target="_blank" href="http://twitter.com/{{ site.author.twitter }}/" class="social__icon--twitter"><i class="icon--twitter"></i></a>
+				    </div>
+				    <div class="social__item">
+				    	<a target="_blank" href="http://github.com/{{ site.author.github }}/" class="social__icon--github"><i class="icon--github"></i></a>
+				    </div>
 				</div><!-- misc -->
 				<ul>
 					<li class="archive"><a href="/archive.html">archive</a></li>

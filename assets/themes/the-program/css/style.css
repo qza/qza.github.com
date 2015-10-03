@@ -1496,3 +1496,7 @@ hr {
 	display: inline;
 	float: right;	
 }
+
+.img-box-center {
+	text-align: center;
+}

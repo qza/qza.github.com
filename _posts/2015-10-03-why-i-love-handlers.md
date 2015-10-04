@@ -3,7 +3,7 @@ layout: post
 title: "Why I love handlers"
 description: ""
 category: [technical]
-tags: [design, patterns]
+tags: [software design]
 ---
 {% include JB/setup %}
 

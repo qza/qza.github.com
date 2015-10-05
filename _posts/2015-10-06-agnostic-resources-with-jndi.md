@@ -13,28 +13,28 @@ The JNDI enables usage of naming services via it's own API and SPI that is imple
 
 Java application can reference named datasources using JNDI in following ways:
 
-1. Via initial context.
+## Via initial context.
 
 {% highlight java %}
 Context context = new InitialContext(env);
 DataSource ds = (DataSource) context.lookup("java:comp/env/jdbc/mydb");
 {% endhighlight %}
 
-2. Via @Resource annotation
+## Via @Resource annotation
 
 {% highlight java %}
 @Resource(name="java:comp/env/jdbc/mydb")
 private javax.sql.DataSource datasource;
 {% endhighlight %}
 
-3. With Spring JNDI template
+## With Spring JNDI template
 
 {% highlight java %}
 JndiTemplate template = new JndiTemplate();
 Datasource datasource = (Datasource) template.lookup("java:comp/env/jdbc/mydb");
 {% endhighlight %}
 
-4. With Spring JndiObjectFactoryBean
+## With Spring JndiObjectFactoryBean
 
 {% highlight xml %}
 <beans:bean id="datasource" class="org.springframework.jndi.JndiObjectFactoryBean">
@@ -44,7 +44,7 @@ Datasource datasource = (Datasource) template.lookup("java:comp/env/jdbc/mydb");
 
 In similar way, Java application can reference messaging destination:
 
-1. Via Initial context
+## Via Initial context
 
 {% highlight java %}
 Context jndiContext = new InitialContext(); 
@@ -53,14 +53,14 @@ ConnectionFactory connectionFactory = (ConnectionFactory)
 Queue destination = (Queue) jndiContext.lookup("jms/myqueue"); 
 {% endhighlight %}
 
-2. With @Resource annotation
+## With @Resource annotation
 
 {% highlight java %}
 @Resource(lookup = "jms/myqueue") Queue queue;
 @Resource(lookup = "jms/mytopic") Topic topic;
 {% endhighlight %}
 
-3. With Spring JNDI template
+## With Spring JNDI template
 
 {% highlight java %}
 JndiTemplate template = new JndiTemplate();

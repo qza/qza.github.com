@@ -679,7 +679,8 @@ pre {
   padding-left: 0;
 }
 .unit-article ul {
-  list-style: none;
+  /*list-style: none;*/
+  list-style-position: inside;
 }
 .unit-article ol {
   list-style: decimal;

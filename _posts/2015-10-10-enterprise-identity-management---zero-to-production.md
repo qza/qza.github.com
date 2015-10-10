@@ -24,10 +24,11 @@ There are many aspects against existing projects can be evaluated. Here are some
  *  application server support
  *  easiness of main configuration (service, roles, privileges etc.)
  *  password management features 
- *  end-user self service features
+ *  self-service features for end-users
  *  extensibility and easiness of UI customization 
- *  framework support and code base quality
  *  audit trail, level, quality and options
+ *  framework support and code base quality
  *  availability of client SDKs
+ *  known limitations
 
 Implementation of enterprise IM requires many other actions and project roles. Data officers should ensure that credential data is collected,  organized and stored in central way. Security experts should make proper test to verify that there is no exposure of sensitive data. Design team should prepare design for forms, emails and other graphical elements presented to the client. Project leads should understand that such project demands developers from all applications to be be included during integration and that client side of this project takes equally important part as IM system itself.

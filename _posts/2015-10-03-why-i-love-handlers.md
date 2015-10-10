@@ -7,7 +7,7 @@ tags: [software design]
 ---
 {% include JB/setup %}
 
-Naming in software development is well known thing. We give names to the classes by combining roles, business and tech concepts. Classes that play roles of “Handler” are pretty common in software architecture. Here is why I find them useful.
+Naming in software development is well known thing. We give names to the classes by combining roles, business and tech concepts. Classes that play roles of Handler or Processor are pretty common in software architecture. Here is why I find them useful.
 
 First of all they are kind a simple. It's intuitively that they handle something and focus on that something is among the important things to keep in mind while developing handler class. 
 

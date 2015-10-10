@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Enterprise Identity Management   zero to production"
+title: "Enterprise Identity Management - zero to production"
 description: ""
 category: [technical]
 tags: [enterprise, identity, security]
@@ -19,15 +19,15 @@ Developers that take responsibility for implementation of IM system can have two
 
 There are many aspects against existing projects can be evaluated. Here are some of those:
 
-+ storage support and pluggability (AD, DB etc.)
-+ protocol support and connectivity ([SAML](http://saml.xml.org/), [OpenID](http://openid.net/) etc.)
-+ application server support
-+ easiness of main configuration (service, roles, privileges etc.)
-+ password management features 
-+ end-user self service features
-+ extensibility and easiness of UI customization 
-+ framework support and code base quality
-+ audit trail, level, quality and options
-+ availability of client SDKs
+* storage support and pluggability (AD, DB etc.)
+* protocol support and connectivity ([SAML](http://saml.xml.org/), [OpenID](http://openid.net/) etc.)
+* application server support
+* easiness of main configuration (service, roles, privileges etc.)
+* password management features 
+* end-user self service features
+* extensibility and easiness of UI customization 
+* framework support and code base quality
+* audit trail, level, quality and options
+* availability of client SDKs
 
-Implementation of enterprise IM requires many other actions and project roles. Data officers should ensure that credential data is collected, organized and stored in central way. Security experts should make proper test to verify that there is no exposure of sensitive data. Design team should prepare design for forms, emails and other graphical elements presented to the client. Project leads should understand that such project demands developers from all applications to be be included during integration and that client side of this project takes equally important part as IM system itself.
+Implementation of enterprise IM requires many other actions and project roles. Data officers should ensure that credential data is collected,  organized and stored in central way. Security experts should make proper test to verify that there is no exposure of sensitive data. Design team should prepare design for forms, emails and other graphical elements presented to the client. Project leads should understand that such project demands developers from all applications to be be included during integration and that client side of this project takes equally important part as IM system itself.

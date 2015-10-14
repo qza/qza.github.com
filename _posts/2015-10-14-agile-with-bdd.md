@@ -25,33 +25,33 @@ Business has decided to allow customers to cancel their tickets. Amount of money
 
 Feature: Ticket cancelation
 
-  Scenario: Cancelation for regular customers withing cancelation period
+Scenario: Cancelation for regular customers withing cancelation period
 
     Given regular customer has bought a ticket
 
-    When customer makes request to cancel the ticket
-    And request is within the acceptable cancelation period defined by the policy
+     When customer makes request to cancel the ticket
+      And request is within the acceptable cancelation period defined by the policy
 
-    Then payment transaction should be "canceled"
-    And new transaction should be "created" with amount defined by the policy
-    And ticket should be "canceled"
-    And customer should be "notified" about the cancelation
+     Then payment transaction should be "canceled"
+      And new transaction should be "created" with amount defined by the policy
+      And ticket should be "canceled"
+      And customer should be "notified" about the cancelation
 
 
-  Scenario: Cancelation for regular customers after cancelation period
+Scenario: Cancelation for regular customers after cancelation period
 
     Given regular customer has bought a ticket
 
-	When customer makes request to cancel the ticket
-	And cancelation period defied by the policy has expired
+	 When customer makes request to cancel the ticket
+	  And cancelation period defied by the policy has expired
 	
-	Then customer should be "notified" about expired period
-	And ticket should be "active"
+	 Then customer should be "notified" about expired period
+	  And ticket should be "active"
 
 {% endhighlight %}
 
 Similar, we could define scenarios for the premium customers.
 
-BDD scenarios can be our complete acceptance criteria. As they are written in special DSL, we can make them executable and include in continuous intergation process. Gherkin is the language specially designed for expressing behavior. Gherkin comes with many features that can be used to achieve precise expressions. [Here] (https://cucumber.io/docs/reference) is one of the excellent guides.
+BDD scenarios can be our complete acceptance criteria. As they are written in special DSL, we can make them executable and include in continuous intergation process. Gherkin is the language specially designed for expressing behavior. Gherkin comes with many features that can be used to achieve precise expressions. [Here](https://cucumber.io/docs/reference) is one of the excellent guides.
 
 Having scenarios defined like this can have huge positive impact on project during all stages. Description of the exact business situations can be really helpful for new team members on existing projects. There are known situations when business rules and expected behavior can be figured out only from code. In such situations, creating and asserting scenarios with the business can be big step forward in understanding unknown software systems, existing and new.

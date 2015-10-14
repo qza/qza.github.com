@@ -7,6 +7,8 @@ tags: [enterprise, identity, security]
 ---
 {% include JB/setup %}
 
+<div class="text-div">
+
 Identity management (IM) systems bring us centralized authorization and authentication, many other features among with their most famous one: Single-sign-on (SSO). Best way to understand Identity management is by understanding what is ment by Identity providence.
 
 One of the main roles of Identity management system is to act as Identity provider. Identity provider is the system that owns identity information and provides that information to many client (third-party) applications. Every authentication happens with Identity provider. Identity provider then notifies client applications when authentication events occur. This is known as Identity federation, describing the trust given to identity informations coming from different domains. Different domains relate to the fact that Identity provider verifies credentials. Client applications have complete trust in Identity provider and perform authentication of users inside their security domain. Their security domain means that client application are still the ones that own and maintain client session. Events are used to synchronize session on the client side.
@@ -32,3 +34,5 @@ There are many aspects against existing projects can be evaluated. Here are some
  *  known limitations
 
 Implementation of enterprise IM requires many other actions and project roles. Data officers should ensure that credential data is collected,  organized and stored in central way. Security experts should make proper test to verify that there is no exposure of sensitive data. Design team should prepare design for forms, emails and other graphical elements presented to the client. Project leads should understand that such project demands developers from all applications to be be included during integration and that client side of this project takes equally important part as IM system itself.
+
+</div>

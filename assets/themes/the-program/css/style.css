@@ -1501,15 +1501,10 @@ hr {
 	text-align: center;
 }
 
-.entry-content a {
+.text-div a {
 	color: #C26164;
 }
-
-.entry-content a {
-	color: #C26164;
-}
-
-.entry-content a:hover {
+.text-div a:hover {
 	color: #d08688;
 }
 

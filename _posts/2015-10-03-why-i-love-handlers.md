@@ -7,6 +7,8 @@ tags: [software design]
 ---
 {% include JB/setup %}
 
+<div class="text-div">
+
 Naming in software development is well known thing. We give names to the classes by combining roles, business and tech concepts. Classes that play roles of Handler or Processor are pretty common in software architecture. Here is why I find them useful.
 
 First of all they are kind a simple. It's intuitively that they handle something and focus on that something is among the important things to keep in mind while developing handler class. 
@@ -21,4 +23,4 @@ From the technical view, they are also perfect for delegation. We can place dele
  
 As illustrated on diagram, client event is passed to the router. Router correlates each event with dedicated handler class in form of routes. When event is received, router selects handler and delegates to the handler class. HandlerTemplate makes sure that right set of actions is executed before and after event is passed to the handler class. The only thing that is left is for handler class to perform it's function.  
 
- 
+</div> 

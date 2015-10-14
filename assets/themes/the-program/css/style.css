@@ -1500,3 +1500,17 @@ hr {
 .img-box-center {
 	text-align: center;
 }
+
+.entry-content a {
+	color: #C26164;
+}
+
+.entry-content a {
+	color: #C26164;
+}
+
+.entry-content a:hover {
+	color: #d08688;
+}
+
+

@@ -42,11 +42,11 @@ Scenario: Cancelation for regular customers after cancelation period
 
     Given regular customer has bought a ticket
 
-	 When customer makes request to cancel the ticket
-	  And cancelation period defied by the policy has expired
+     When customer makes request to cancel the ticket
+      And cancelation period defied by the policy has expired
 	
-	 Then customer should be "notified" about expired period
-	  And ticket should be "active"
+     Then customer should be "notified" about expired period
+      And ticket should be "active"
 
 {% endhighlight %}
 

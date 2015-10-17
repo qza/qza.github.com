@@ -2,8 +2,8 @@
 layout: post
 title: "Enterprise Identity Management - zero to production"
 description: ""
-category: [technical]
-tags: [enterprise, identity, security]
+category: [design]
+tags: [design, enterprise, identity, security]
 ---
 {% include JB/setup %}
 

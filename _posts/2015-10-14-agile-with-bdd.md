@@ -2,8 +2,8 @@
 layout: post
 title: "Agile with BDD"
 description: ""
-category: [technical]
-tags: [agile, bdd, gherkin]
+category: [design]
+tags: [design, agile, bdd, gherkin]
 ---
 {% include JB/setup %}
 

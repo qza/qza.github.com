@@ -2,7 +2,7 @@
 layout: post
 title: "BDD in Java with JUnit, Spring and Cucumber JVM"
 description: ""
-category: [tutorial]
+category: [tutorial, development]
 tags: [java, spring, junit, cucumber, bdd]
 ---
 {% include JB/setup %}
@@ -46,7 +46,7 @@ Before adding other elements, just a note about artifacts that are included in f
 
 Step definitions are used to define processing for each statement of the feature. They are so called "glue" part that connects feature statements to processing logic. To be able to define processing we need our spring beans. Cucumber-spring enables us to wire and invoke spring beans from the step definitions. Two xml files are used: appcontext.xml and cucumber.xml. Here are the relevant parts:
 
-appcontext.xml
+[appcontext.xml](https://github.com/qza/bdd-cucumber-jvm-spring/blob/master/src/test/resources/appcontext.xml)
 
 {% highlight xml %}
 
@@ -54,7 +54,7 @@ appcontext.xml
 
 {% endhighlight %}
 
-cucumber.xml
+[cucumber.xml](https://github.com/qza/bdd-cucumber-jvm-spring/blob/master/src/test/resources/cucumber.xml)
 
 {% highlight xml %}
 
@@ -95,7 +95,7 @@ public class FeaturesBase {
 
 {% endhighlight %}
 
-By default, Cucumber will look for the files with extension .feature in src/test/resources folder that matches package structure in which runner class is located. In case that fetures are located by the runner and there are missing steps definitions, cucumber-junit generates code for missing steps in the console log. This is cool feature and can be used to quickly get required annotations.
+By default, Cucumber will look for the files with extension .feature in src/test/resources folder that matches package structure in which runner class is located. In case that features are located by the runner and there are missing steps definitions, cucumber-junit generates code for missing steps in the console log. This is cool feature and can be used to quickly get required annotations.
 
 Here is the implementation of the steps in PurchaseTicketSteps class.
 
@@ -150,7 +150,7 @@ public void assertTicketWithoutDiscount() throws Throwable {
 
 {% endhighlight %}
 
-Notice that muable object attribute "ticket" is used as test context of this feature. Each scenario resets this ticket to null. This is done with special cucumber annotation @After that is different that JUnit annotation with same name. Difference is that cucumber @After method is executed after each scenario. Last element is PurchaseTicketFeature that is started with cucumber JUnit runner by the Maven Surefire plugin.
+Test instance attribute "ticket" is used as test context of this feature. Each scenario resets this ticket to null. This is done with special cucumber annotation @After that is different that JUnit annotation with same name. Difference is that cucumber @After method is executed after each scenario. Last element is PurchaseTicketFeature that is started with cucumber JUnit runner by the Maven Surefire plugin.
 
 {% highlight java %}
 

@@ -2,8 +2,8 @@
 layout: post
 title: "Why I love handlers"
 description: ""
-category: [technical]
-tags: [software design]
+category: [design]
+tags: [design]
 ---
 {% include JB/setup %}
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Agnostic resources with JNDI"
 description: ""
-category: [technical]
+category: [development, design]
 tags: [java, jndi]
 ---
 {% include JB/setup %}

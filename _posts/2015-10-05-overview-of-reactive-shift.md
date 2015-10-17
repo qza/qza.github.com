@@ -2,7 +2,7 @@
 layout: post
 title: "Overview of Reactive shift"
 description: ""
-category: [technical]
+category: [design]
 tags: [design]
 ---
 {% include JB/setup %}

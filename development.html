@@ -1,0 +1,22 @@
+---
+layout: page
+title: Articles about Software development
+header: Software development
+group: navigation
+---
+{% include JB/setup %}
+
+<ul class="blank-list">
+	{% for post in site.categories.development %}
+		<li>
+			<span>
+		   		<a href="{{ post.url }}">
+		   			{{ post.title }}
+		    	</a>
+		    	<span class="badge">
+		    		<time>{{ post.date | date: "%-d %B %Y" }}</time>
+		    	</span>
+	    	</span>
+	    </li>
+	{% endfor %}
+</ul>

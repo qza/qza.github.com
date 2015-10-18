@@ -181,4 +181,7 @@ This should produce output simillar to this:
 And thats all!
 
 Console output shows which step definitions were used for which statements of scenario. HTML report is generated in target/cucumber folder by default.
+
+If you are using an Eclipse, checkout the Natural plugin on Eclipse marketplace that comes with support for .feature files and nice editor.
+
 The complete source code of this tutorial is available as [public github repository](https://github.com/qza/bdd-cucumber-jvm-spring)

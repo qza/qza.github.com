@@ -8,7 +8,7 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Developer stream
+title : software bucket
 tagline: blog about software, development, design, business, experiences and much more  
 author :
   name : Zoran Kokovic

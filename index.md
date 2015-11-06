@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Index
+title: index
 tagline: Welcome note
 ---
 {% include JB/setup %}

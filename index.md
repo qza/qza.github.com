@@ -12,9 +12,6 @@ tagline: Welcome note
 		   		<a href="{{ post.url }}">
 		   			{{ post.title }}
 		    	</a>
-		    	<span class="badge">
-		    		<time>{{ post.date | date: "%-d %B %Y" }}</time>
-		    	</span>
 	    	</span>
 	    </li>
 	{% endfor %}
